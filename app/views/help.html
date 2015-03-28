@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>General</h2>
+
+            <p>
+                You reached Nagrgtr Search. Here you are looking in an index full of great data - not only headlines -
+                yes, in the real content.
+                <br/>
+                <br/>
+                Its aggregated content from outgoing links from Coinspotting - for Cryptocurrencies, DataTau, Devmaster,
+                digg, Dzone, Echo JS
+                - News for Javascript, Firespotting - for Ideas, Inbound - For Marketing, Lamernews, Lesswrong
+                Discussion, Lobsters, Makernews, Med Technology News - medical technology, Pullup.io - NodeJS related,
+                r/Algorithms, r/Analytics, r/Analyzit, r/Angular JS, r/Bitcoin, r/BSD, r/Business Intelligence,
+                r/Cableporn, r/Coding, r/Coq, r/Crypto, r/Data is Beautiful, r/Data Science, r/Database, r/DataHoarder,
+                r/Datasets, r/Dependent Types, r/Design, r/Devkit, r/Django, r/DuckDuckGo, r/embeddedlinux,
+                r/Entrepeneur, r/FreeBSD, r/Frontend, r/FSharp, r/Gamification, r/HaikuOS, r/Haskell, r/Homelab,
+                r/Ingress, r/IPython, r/Kernel, r/Linux, r/Linux Devices, r/Linuxadmin, r/LinuxDev, r/Lisp, r/Lowlevel,
+                r/Machine Learning, r/Math, r/NetBSD, r/NetSec, r/NodeJS, r/Ocaml, r/OpenBSD, r/OpenData, r/Opensource
+                Hardware, r/OpenSUSE, r/OpenWRT, r/Optimization, r/OS Dev, r/Philosophy of Science, r/Philospohy of
+                Math, r/Programming, r/Programming Languages, r/Python, r/REMath, r/Reverse Engineering, r/RTLSDR,
+                r/Scala, r/Semantic Web, r/Smallbusiness, r/Startups, r/Statistics, r/Sysadmin, r/Sysor, r/Systems,
+                r/Types, r/Unix, r/Usefulscripts, r/Visualization, r/VRD, r/Webdesign, r/Webdev, Slashdot.org, Soylent
+                News, USV - Union Square Ventures, WoodSpotting , Y Combinator - Hacker News.
+                <br/>
+                <br/>
+                The underlying index is - how you've probably guessed correctly - a Solr index. The index should contain
+                almost everything since Oct 2014 what was posted on outgoing links from the pages mentioned above.
+            </p>
+
+            <h2>Syntax</h2>
+
+            <p>
+                Solr is a powerful search engine, allowing for a variety of different ways to look for content.
+            </p>
+
+            <h3>Simple Search Example</h3>
+
+            <p>
+                Imagine you want to search for "Hacker news search". One simple way is to enter it directly into the
+                searchbox and get <a href="/#/search?q=Hacker%20news%20search">/#/search?q=Hacker%20news%20search</a>
+            </p>
+
+            <h3>Fields</h3>
+
+            <p>
+                Several fields are searchable:
+            <ul>
+
+                <li>
+                    url: the url from the website
+                </li>
+                <li>
+                    title_website: the title of the website
+                </li>
+                <li>
+                    content: the content of the website
+                </li>
+                <li>
+                    created_at: date when the website was fetched the first time
+                </li>
+                <li>
+                    hn_frontpage: boolean if the link was ever on the frontpage
+                </li>
+                <li>
+                    An Example: <a href="http://search.nagrgtr.com/#/search?q=created_at:%5B2014-11-01T12:45:00Z%20TO%20*%5D%20%2Bhn_frontpage:true%20%2Btitle_website:Microsoft&dismax=false">created_at:[2014-11-01T12:45:00Z TO *] +hn_frontpage:true +title_website:Microsoft</a> without the dismax parser...
+                </li>
+
+            </ul>
+            </p>
+        </div>
+    </div>
+</div>
