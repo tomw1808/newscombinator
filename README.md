@@ -33,7 +33,7 @@ The solution here is responsive, pretty much standard angular and bootstrap. Fee
 
 ## Api Limits
 
-We (well, technicall I) try our (my) best to keep the service running. Currently there are soft-limits in place: if you take the server(s) down - accidentally or not - your IP will be banned, no exceptions. So keep it sane, please. 
+We (well, technically I) try our (my) best to keep the service running. Currently there are soft-limits in place: if you take the server(s) down - accidentally or not - your IP will be banned, no exceptions. So keep it sane, please. 
 
 ## License
 
