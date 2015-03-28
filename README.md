@@ -45,4 +45,4 @@ Coinspotting - for Cryptocurrencies, DataTau, Devmaster, Dzone, Echo JS - News f
 
 ## Contact
 
-Get in touch with me on thomas at newscombinator dot com. Or like the [HNCombinator](https://twitter.com/HNCombinator) on twitter, that would be very helpful. Thank you.
+Get in touch with me on thomas at newscombinator dot com. Or like the [HNCombinator](https://twitter.com/HNCombinator) on twitter, that would be very helpful. If you want to get the latest infos, when what happens, why not [subscribe](http://eepurl.com/-q6v1)? We don't like spam.
