@@ -2,13 +2,16 @@
 
 > A Webapp is just a frontend around a database
 
-[http://www.newscombinator.com](http://www.newscombinator.com)
+[http://www.newscombinator.com](http://www.newscombinator.com) by [Nagrgtr](http://www.nagrgtr.com)
+
 
 ## Introduction
 
-Reading a lot of news-sites is tiring. Being top-informed on Reddit, Ycombinator, Makernews, Datatau, Coinspotting and many more has become a hassle. The Newscombinator combines all those sites and grabs it from a publicy available API.
+Reading a lot of news-sites is tiring. Being top-informed on Reddit, Ycombinator, Makernews, Datatau, Coinspotting and many more has become a hassle. The Newscombinator combines all those sites and grabs it from a publicly available API.
 
 The Newscombinator is written in JavaScript, wrapping AngularJS and Bootstrap around a RESTful API. It is a sample App to demonstrate the possibilities of the underlying Solr-Index.
+
+Why? I am working on a side project, the News Aggregator, which automagically classifies IT news to categories which were setup by yourself. I think opening the API will follow soon, so I think this is a great first kickoff app for demos. 
 
 ## Installation
 
@@ -25,7 +28,7 @@ Then install it
 
 And start hacking your own version. As simple as that.
 
-The solution here is responsive, pretty much standard angular and bootstrap. Feel free to make it really awesome.
+The solution here is responsive, pretty much standard angular and bootstrap. Feel free to make something really awesome with that and put your name underneath.
 
 
 ## Api Limits
