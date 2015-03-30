@@ -79,7 +79,7 @@ angular.module('agrgtrApp')
         };
 
         $scope.nextPage = function () {
-            amTimeAgoConfig.serverTime = new Date().getTime()+(60*60*1000);
+            amTimeAgoConfig.serverTime = new Date().getTime() - (new Date().getTimezoneOffset()*60 * 1000);
             TopnewsService.nextPage();
         };
 
@@ -153,7 +153,7 @@ angular.module('agrgtrApp')
         };
 
         $scope.startSearch = function () {
-            amTimeAgoConfig.serverTime = new Date().getTime()+(60*60*1000);
+            amTimeAgoConfig.serverTime = new Date().getTime() - (new Date().getTimezoneOffset()*60 * 1000);
             TopnewsService.query.custom = $scope.q;
             //var qs = angular.toJson(TopnewsService.query);
             $location.search({qs: angular.toJson(TopnewsService.query), ranking: angular.toJson($scope.ranking)});
