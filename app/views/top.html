@@ -30,9 +30,10 @@
             <ng-include src="'views/includes/searchmenu.html'"></ng-include>
         </div>
         <div class="col-lg-9 col-lg-offset-3 col-md-8 col-md-offset-4 col-sm-12 content-start">
+            <h3>You landed at the Newscombinator, the aggregated news reading service.</h3><br />
             <div ng-show="getResults().length == 0">Unfortunately no Results. Very bad, try again.</div>
             <div class="row story-row" ng-repeat="result in getResults()"
-                 ng-init="$first ? toggleCollapsed(result, true) : collapsed[result.id] = true;">
+                 ng-init="collapsed[result.id] = true;">
                 <div class="col-xs-12" ng-class='{hovering: result.showEdit}'>
 
                     <div class="story-content">
@@ -46,6 +47,8 @@
                                     gethostname}})
                                 </small></span>
                                 </a>
+
+
                             </div>
                             <div class="col-xs-1" ng-click="toggleCollapsed(result);$event.stopPropagation()"
                                  >
@@ -73,6 +76,12 @@
                                             <span title="Comments">{{result.hn_num_comments}}
                                                 <span class="fa fa-comment-o"></span>
                                             </span>
+                                        on
+                                         <span class="desaturate" ng-if="result.hide_titlelinks == undefined">
+                                       <span ng-repeat="sourcelink in result.source_links">
+                                             <a ng-href="{{sourcelink}}"><img class="img-responsive img-sourceitem" ng-src="{{sourcelink | getfavicon}}" /></a>
+                                        </span>
+                                    </span>
                                         &bull;
                                     </span>
                                     <span ng-repeat="sourceitem in result.sourceitems">

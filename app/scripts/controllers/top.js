@@ -59,27 +59,33 @@ angular.module('agrgtrApp')
 
 
 
+
         $scope.toggleCollapsed = function (objArticle, forceopen) {
             if (forceopen == true) {
+
+                objArticle.hide_titlelinks = true;
                 $scope.collapsed[objArticle.id] = false;
                 TopnewsService.fetchSimilarToArticle(objArticle);
                 TopnewsService.fetchSourceitems(objArticle);
+
             } else {
                 if (!(objArticle.id in $scope.collapsed) || $scope.collapsed[objArticle.id]) {
-
+                    objArticle.hide_titlelinks = true;
                     $scope.collapsed[objArticle.id] = false;
                     TopnewsService.fetchSimilarToArticle(objArticle);
                     TopnewsService.fetchSourceitems(objArticle);
 
 
                 } else {
+                    objArticle.sourceitems = undefined;
+                    objArticle.hide_titlelinks = undefined;
                     $scope.collapsed[objArticle.id] = !$scope.collapsed[objArticle.id];
                 }
             }
         };
 
         $scope.nextPage = function () {
-            amTimeAgoConfig.serverTime = new Date().getTime() - (new Date().getTimezoneOffset()*60 * 1000);
+            amTimeAgoConfig.serverTime = new Date().getTime();
             TopnewsService.nextPage();
         };
 
@@ -153,7 +159,7 @@ angular.module('agrgtrApp')
         };
 
         $scope.startSearch = function () {
-            amTimeAgoConfig.serverTime = new Date().getTime() - (new Date().getTimezoneOffset()*60 * 1000);
+            amTimeAgoConfig.serverTime = new Date().getTime();
             TopnewsService.query.custom = $scope.q;
             //var qs = angular.toJson(TopnewsService.query);
             $location.search({qs: angular.toJson(TopnewsService.query), ranking: angular.toJson($scope.ranking)});
