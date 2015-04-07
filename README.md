@@ -2,7 +2,7 @@
 
 > A Webapp is just a frontend around a database
 
-[http://www.newscombinator.com](http://www.newscombinator.com) by [Nagrgtr](http://www.nagrgtr.com)
+[http://reader.newscombinator.com - The Reader](http://reader.newscombinator.com) by [Newscombinator](http://www.newscombinator.com)
 
 
 ## Introduction
