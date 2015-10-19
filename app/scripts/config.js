@@ -4,7 +4,7 @@ angular.module('config', [])
 
     .constant('ENV', {
         'name': 'NAgrgtr',
-        'apiEndpoint': 'http://nagrgtr.com/api/',
+        'apiEndpoint': 'http://www.newscombinator.com/api/',
          'trainsamples': 10
     })
 
